@@ -9,26 +9,22 @@ def gcd(a, b):
     Returns:
         The greatest common divisor of a and b, None if the gcd is undefined.
     """
-    if not isinstance(a, int) or not isinstance(b, int): # Throw an error if a and b are not integers
+    if not isinstance(a, int) or not isinstance(b, int):
         raise Exception("The variables must be integers!")
     
-    if a == 0 and b == 0: # Handle edge cases
+    # If both are zero, gcd is undefined
+    if a == 0 and b == 0:
         return None
-    elif a==0:
-        return abs(b)
-    elif b==0:
-        return abs(a)
     
-    if a<0:
-        a = abs(a) # Make sure a = |a|
+    # Work with positive values since gcd is always positive
+    a = abs(a)
+    b = abs(b)
     
-    if b<0:
-        b = abs(b) # Make sure b = |b|
-
-    while a != b: # Loop until a and b are equal
-        if b-a>0: # If a can be subtracted from b without b becoming negative
-            b = b-a # Do it
-        elif b-a<0: # If that's not the case a>b (since the loop would have stopped if a=b)
-            a = a-b # Subtract b from a
-
-    return a # Return a since a and b are the same (the greatest common divisor of a and b's original values)
+    # Keep replacing the larger number with the remainder
+    # This is way faster than subtracting repeatedly
+    while b != 0:
+        temp = b
+        b = a % b  # Get the remainder when dividing a by b
+        a = temp   # Move b into a for the next round
+    
+    return a  # When b hits zero, a contains the gcd
