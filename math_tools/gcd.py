@@ -9,8 +9,9 @@ def gcd(a, b):
     Returns:
         The greatest common divisor of a and b, None if the gcd is undefined.
     """
+    
     if not isinstance(a, int) or not isinstance(b, int):
-        raise Exception("The variables must be integers!")
+        raise Exception("The variables a and b must both be integers!")
     
     # If both are zero, gcd is undefined
     if a == 0 and b == 0:
