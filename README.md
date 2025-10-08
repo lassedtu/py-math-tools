@@ -1,16 +1,16 @@
 # py-math-tools
 
-A collection of mathematical utilities created from scratch, aimed at university-level mathematics students and enthusiasts. This project provides implementations of various mathematical algorithms and functions.
+A bunch of math utilities I built from scratch, mainly as a way to improve both my math and programming skills at the same time.
 
-## Features
+It’s written in Python and started out as a personal learning project, but you can use it for whatever you want.
 
-### Greatest Common Divisor (GCD)
+## What’s Inside
 
-This project includes an implementation of the Euclidean algorithm to find the greatest common divisor (GCD) of two integers.
+Right now, it includes a few basic algorithms, like finding the greatest common divisor (GCD) using the Euclidean algorithm but I’ll definitely keep adding more as I go.
 
-#### Usage
+### Example: GCD
 
-The `gcd` function is accessible via the `math_tools` package:
+Here’s how to use the `gcd` function:
 
 ```python
 import math_tools
@@ -19,6 +19,10 @@ result = math_tools.gcd(a, b)
 print(result)
 ```
 
--   `a` and `b` must be integers.
--   The function will return the greatest common divisor of `a` and `b`.
--   If the inputs are not valid integers, it will return `None`.
+* `a` and `b` should be integers
+* returns the greatest common divisor of `a` and `b`
+* returns `None` if the inputs aren’t valid integers
+
+---
+
+I made this project mainly for myself, to get better at writing clean, efficient math-related code. But if it can help you with your own learning or projects, that’s great.
