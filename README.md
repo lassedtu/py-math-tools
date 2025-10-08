@@ -6,7 +6,7 @@ It’s written in Python and started out as a personal learning project, but you
 
 ## What’s Inside
 
-Right now, it includes a few basic algorithms, like finding the greatest common divisor (GCD) using the Euclidean algorithm but I’ll definitely keep adding more as I go.
+Right now, it includes a few basic algorithms, like finding the greatest common divisor (GCD) using the Euclidean algorithm, checking if a number is a prime number, but I’ll definitely keep adding more as I go.
 
 ### GCD
 
