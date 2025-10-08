@@ -8,7 +8,7 @@ It’s written in Python and started out as a personal learning project, but you
 
 Right now, it includes a few basic algorithms, like finding the greatest common divisor (GCD) using the Euclidean algorithm but I’ll definitely keep adding more as I go.
 
-### Example: GCD
+### GCD
 
 Here’s how to use the `gcd` function:
 
@@ -21,7 +21,19 @@ print(result)
 
 * `a` and `b` should be integers
 * returns the greatest common divisor of `a` and `b`
-* returns `None` if the inputs aren’t valid integers
+
+### is_prime
+
+Here’s how to use the `is_prime` function:
+```python
+import math_tools
+
+result = math_tools.is_prime(n)
+print(result)
+```
+
+* `n` should be a positive integer
+* returns `True` if `n` is a prime number, `False` otherwise
 
 ---
 
