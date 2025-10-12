@@ -11,9 +11,12 @@ def lcm(a, b):
     """
     if not isinstance(a, int) or not isinstance(b, int):
         raise Exception("The variables a and b must both be integers!")
-    
+
+    a = abs(a)
+    b = abs(b)
+
     g = gcd(a, b)
     if g is None:
         return None
     lcm = (a * b) // g
-    return abs(lcm)
+    return lcm
