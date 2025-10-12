@@ -1,2 +1,3 @@
-from .gcd import gcd
+from .gcd import *
+from .lcm import *
 from .primes import *
